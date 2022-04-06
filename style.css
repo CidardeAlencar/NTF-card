@@ -28,7 +28,7 @@ body{
     width: 86%;
     margin: 0 auto;
     background-color: var(--Very_dark_blue_CBG);
-    box-shadow: 20px 20px 20px 20px hsl(216, 56%, 10%),  10px 10px 10px 10px hsl(216, 56%, 7%);
+    box-shadow: 0px 25px 3px 10px #0c1729,0px 25px 3px 40px #0c192c;
 }
 .NFT-card-top{
     height: 280px;
@@ -39,7 +39,23 @@ body{
 .NFT-card-top img{
     border-radius: 8PX;
     position: relative;
-    bottom: -25px
+    bottom: -25px;
+}
+.NFT-card-top-active{
+    opacity: 0;
+    background-color: var(--cyan);
+    height: 280px;
+    width: 280px;
+    border-radius: 8px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -25px;
+}
+
+.NFT-card-top-active:hover {
+    opacity: 0.5;
 }
 .NFT-card-bottom{
     width: 285px;
@@ -54,6 +70,9 @@ body{
     font-size: 22px;
     font-weight: 600;
     color: var(--White);
+}
+.NFT-card-bottom_description-NFTgeneral p:nth-child(1):hover{
+    color: var(--cyan);
 }
 .NFT-card-bottom_description-NFTgeneral p:nth-child(2){
     font-size: var(--name_and_stats_Font_size);
@@ -113,4 +132,7 @@ body{
 }
 .NFT-card-bottom_description-NFTautor span{
     color: var(--White);
+}
+.NFT-card-bottom_description-NFTautor span:hover{
+    color: var(--cyan);
 }
