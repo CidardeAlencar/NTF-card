@@ -15,18 +15,47 @@ html,body{
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
+    height: 100vh;
+    display: block;
 }
 body{
     background: var(--Very_dark_blue_MBG);
     height: 100vh;
-    display: flex;
     flex-direction: column;
     justify-content: center;
+    
+}
+.button-container{
+    margin: 30px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.button{
+    width: 150px;
+    border-radius: 8px;
+    border:2px solid currentColor;
+    font-size: var(--name_and_stats_Font_size);
+    font-weight: 600;
+    color: var(--Soft_blue);
+    background-color:var(--Very_dark_blue_L);
+}
+.button:hover{
+    color:var(--White);
+    background-color: var(--Very_dark_blue_L);
+    box-shadow: 0px 0px 8px 8px var(--cyan);
+}
+.button:disabled{
+    opacity: 0.5;
 }
 .NFT-card{
     border-radius: 8px;
+    position: relative;
     width: 86%;
     margin: 0 auto;
+    margin-top: 27px;
+    margin-bottom: 27px;
     background-color: var(--Very_dark_blue_CBG);
     box-shadow: 0px 25px 3px 10px #0c1729,0px 25px 3px 40px #0c192c;
 }
@@ -118,7 +147,8 @@ body{
     position: relative;
     display: flex;
     justify-content: flex-start;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 0 0;
+    padding-bottom: 20px;
 }
 .NFT-card-bottom_description-NFTautor img{
     border-radius: 50%;
@@ -132,6 +162,7 @@ body{
 }
 .NFT-card-bottom_description-NFTautor span{
     color: var(--White);
+    margin-left: 5px;
 }
 .NFT-card-bottom_description-NFTautor span:hover{
     color: var(--cyan);
